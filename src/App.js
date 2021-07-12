@@ -23,7 +23,6 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await readTodos()
-      console.log(result)
       setTodos(result)
     }
     fetchData()
@@ -58,9 +57,9 @@ function App() {
 
   const removeTodo = async (id) => {
     await deleteTodo(id)
-    const todosCopy = [...todos]
-    todosCopy.filter(todo => todo._id !== id)
-    setTodos(todosCopy)
+    const result = await readTodos()
+    setTodos(result)
+
   }
 
   return (
