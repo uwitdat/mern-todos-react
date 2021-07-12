@@ -1,4 +1,4 @@
-simple TODO app created with MERN stack/ Materialize 
+simple TODO app created with MERN stack/ Materialize CSS
 
 Front-end hosted on Netlify
 Server hosted on Heroku
